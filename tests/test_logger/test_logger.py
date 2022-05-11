@@ -94,7 +94,7 @@ class TestWrite(TestLogger):
     Tests for "write" method
     """
     def setUp(self) -> None:
-        super(TestWrite, self).setUp()
+        super().setUp()
         self.msg = 'message'
 
     def test_prints_formatted_message(self, datetime_mock, print_mock, exc_info_mock):

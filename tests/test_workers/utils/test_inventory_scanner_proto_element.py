@@ -16,7 +16,7 @@ class Element(_ProtoElement):
         self.field1 = None
         self.field2 = None
         self.field3 = None
-        super(Element, self).__init__(data)
+        super().__init__(data)
 
     @property
     def present(self):

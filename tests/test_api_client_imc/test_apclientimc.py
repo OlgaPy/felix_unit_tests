@@ -46,7 +46,7 @@ class TestGetEnpoint(TestAPIClientIMC):
         """Setup for test method _get_endpoint()"""
         ### SetUp ###
 
-        super(TestGetEnpoint, self).setUp()
+        super().setUp()
 
         ### Run ###
 
@@ -79,7 +79,7 @@ class TestGetRequestTimeout(TestAPIClientIMC):
         """Setup for test method get_request_timeout()"""
         ### SetUp ###
 
-        super(TestGetRequestTimeout, self).setUp()
+        super().setUp()
 
         ### Run ###
 
@@ -107,7 +107,7 @@ class TestGetFelixDataByMbdSn(TestAPIClientIMC):
         """Setup for test method get_felix_data_by_mbd_sn()"""
         ### SetUp ###
 
-        super(TestGetFelixDataByMbdSn, self).setUp()
+        super().setUp()
 
         ### Run ###
         with patch('api_clients.api_client_imc._IMCEndpoints') as imc_urls_mock:

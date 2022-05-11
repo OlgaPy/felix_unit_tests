@@ -84,7 +84,7 @@ class TestGetNvmeList(TestInventoryScanner):
 
     def setUp(self) -> None:
         """Set up test."""
-        super(TestGetNvmeList, self).setUp()
+        super().setUp()
         self.nvme_list = {'1': 'nvme1', '2': 'nvme2', '3': 'nvme3'}
         self.data = json.dumps(self.nvme_list)
         self.open_mock = mock_open(read_data=self.data)
@@ -174,7 +174,7 @@ class TestGetIp(TestInventoryScanner):
 
     def setUp(self) -> None:
         """Set up test."""
-        super(TestGetIp, self).setUp()
+        super().setUp()
         self.ip_list = {'1': 'ip1', '2': 'ip2', '3': 'ip3'}
         self.data = json.dumps(self.ip_list)
         self.open_mock = mock_open(read_data=self.data)
@@ -262,7 +262,7 @@ class TestGetLshw(TestInventoryScanner):
 
     def setUp(self) -> None:
         """Set up test."""
-        super(TestGetLshw, self).setUp()
+        super().setUp()
         self.hw_list = {'1': 'hw1', '2': 'hw2', '3': 'hw3'}
         self.data = json.dumps(self.hw_list)
         self.open_mock = mock_open(read_data=self.data)
@@ -406,7 +406,7 @@ class TestDimms(TestInventoryScanner):
 
     def setUp(self) -> None:
         """Set up test."""
-        super(TestDimms, self).setUp()
+        super().setUp()
         self.scanner._get_lshw = Mock()
         self.scanner._log_collection = Mock()
 
@@ -464,7 +464,7 @@ class TestCpus(TestInventoryScanner):
 
     def setUp(self) -> None:
         """Set up test."""
-        super(TestCpus, self).setUp()
+        super().setUp()
         self.scanner._get_lshw = Mock()
         self.scanner._log_collection = Mock()
 
@@ -576,7 +576,7 @@ class TestPCIs(TestInventoryScanner):
 
     def setUp(self) -> None:
         """Set up test."""
-        super(TestPCIs, self).setUp()
+        super().setUp()
         self.scanner.get_pci_scanner = Mock()
         self.scanner._log_collection = Mock()
 
@@ -634,7 +634,7 @@ class TestSata(TestInventoryScanner):
 
     def setUp(self) -> None:
         """Set up test."""
-        super(TestSata, self).setUp()
+        super().setUp()
         self.scanner._get_lshw = Mock()
         self.scanner._log_collection = Mock()
 
@@ -830,7 +830,7 @@ class TestIfaces(TestInventoryScanner):
 
     def setUp(self) -> None:
         """Set up test."""
-        super(TestIfaces, self).setUp()
+        super().setUp()
         self.scanner._get_lshw = Mock()
         self.scanner._log_collection = Mock()
 
@@ -1019,7 +1019,7 @@ class TestLshwExtract(unittest.TestCase):
 
     def setUp(self) -> None:
         """Set up test."""
-        super(TestLshwExtract, self).setUp()
+        super().setUp()
         self.cpu1 = {'id': '1 cpu', 'class': 'processor', 'claimed': True, 'description': 'Central Process Unit',
                      'physid': '0'}
         self.cpu2 = {'id': '2 cpu', 'class': 'processor', 'claimed': True, 'description': 'Central Process Unit',
